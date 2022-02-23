@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using VegFoods.Core.Models;
+
+namespace VegFoods.Core.Services
+{
+    public interface IJwtService
+    {
+        string GenerateJwt(User user, List<Role> roles);
+    }
+}

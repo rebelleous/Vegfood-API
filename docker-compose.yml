@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vegfoods.api:
+    image: ${DOCKER_REGISTRY-}vegfoodsapi
+    build:
+      context: .
+      dockerfile: VegFoods.Api/Dockerfile
